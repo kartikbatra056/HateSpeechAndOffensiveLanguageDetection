@@ -1,0 +1,79 @@
+body {
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: rgb(0, 150, 200);
+  color:#EFFD5F;
+  text-align: center;
+}
+
+body:hover {
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: rgb(0, 150, 225);
+  color:#FFF200;
+}
+
+h1 {
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+p {
+  width: 600px;
+  display: inline-block;
+}
+
+form {
+  margin-top: 20px;
+  padding: 20px;
+  display: inline-block;
+}
+
+textarea {
+  border-radius: 10px;
+  border-color: blue;
+  background-color:#EFFDFF;
+}
+
+textarea:hover {
+  border-radius: 10px;
+  border-color: blue;
+  border-width:thick;
+}
+
+input {
+  font-size: 25px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  border-color: blue;
+  background-color:#EFFDFF;
+}
+
+input:hover{
+  font-size: 25px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  border-width: thick;
+  border-color: blue;
+}
+
+.enhance{
+  font-size: 1.5rem;
+  font-family: serif;
+  justify-content: center;
+  background-color: #ff4400;
+  width : 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
