@@ -22,7 +22,7 @@ The text data is really messy and contains text that can be considered racist, s
 Which is actually good for our project as data resembles with real world scenario.
 ```
 
-# Folder Structure 
+# Directory Structure 
 
 Following folder structure is inspired from [Cookiecutter-data-science](https://drivendata.github.io/cookiecutter-data-science/#directory-structure)
 I have just slightly modified the structure for my purpose. 
@@ -62,3 +62,83 @@ I have just slightly modified the structure for my purpose.
         └── vectorizer.pkl                      # tfidf vectorizer saved as pickle format to use while inference and evaluation 
         
 ```          
+
+# Getting Started
+
+Here I've mentioned steps to running over linux OS or WSL2(Bash). If you prefer Windows command line please make necessary minor changes accordingly.
+
+## Initial Steps
+* Install Python3
+* Clone repository ```git clone https://github.com/kartikbatra056/HateSpeechAndOffensiveLanguageDetection.git``` 
+* Enter cloned directory ```cd HateSpeechAndOffensiveLanguageDetection```
+* Set ```export PYTHONPATH=.           # prevents from getting module not found error```
+* Create a virtual environment ```python3 -m venv env```
+* Activate virtual environment ```source ./env/bin/activate```
+* Install dependencies ```pip3 install -r requirements.txt```
+
+## Create or process dataset
+
+You can also skip this as it just splits dataset in ```data/raw``` directory into training and test set storing it into ```data/processed```  
+
+* Generate or process dataset ```python3 src/data/make_dataset.py```        
+
+## Train model
+You can train model as follow 
+```
+
+# first lets know the parameter to be passed while training so run following command
+
+python3 src/models/train_model.py -h 
+
+# you will get output as below
+
+positional arguments:
+  path                  Path to training data
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --regression_type REGRESSION_TYPE, -rt REGRESSION_TYPE
+  --scheduler SCHEDULER, -sc SCHEDULER
+  --learning-rate LEARNING_RATE, -lr LEARNING_RATE
+  --regularization REGULARIZATION, -reg REGULARIZATION
+  --save_weight, -s
+  
+ # Next to train model 
+ 
+ python3 src/models/train_model.py path
+ 
+ # all logs generated will be stored into logs directory
+```
+
+## Deploy model
+
+* Deploy the app ```python3 app/app.py```
+* Open web browser and go to ```http://localhost:5000```
+
+# Methods used 
+
+1. Exploratory Data Analysis
+2. Data cleaning and preprocessing 
+3. Feature extraction using ```TFidfVectorizer```
+4. Model Building 
+5. Model Deployment
+
+# Technologies
+
+* Python 
+* scikit-learn
+* nltk
+* regex
+* flask 
+* HTML
+* CSS 
+
+# Website
+
+You can find the webiste running live at [linkedin](https://hateandoffensivelangdetector.herokuapp.com/)
+![Deployed model](https://github.com/kartikbatra056/HateSpeechAndOffensiveLanguageDetection/blob/master/model.JPG)
+
+# Contact
+
+* Contact on [linkedin](https://www.linkedin.com/in/kartik-batra-ba3380174/)
+* Mail me [kartikbatra16012001@gmail.com](mailto:kartikbatra16012001@gmail.com)
