@@ -71,7 +71,7 @@ Here I've mentioned steps to running over linux OS or WSL2(Bash). If you prefer 
 * Install Python3
 * Clone repository ```git clone https://github.com/kartikbatra056/HateSpeechAndOffensiveLanguageDetection.git``` 
 * Enter cloned directory ```cd HateSpeechAndOffensiveLanguageDetection```
-* Set ```export PYTHONPATH=.           # prevents from getting module not found error```
+* Set ```export PYTHONPATH=.                      # prevents from getting module not found error```
 * Create a virtual environment ```python3 -m venv env```
 * Activate virtual environment ```source ./env/bin/activate```
 * Install dependencies ```pip3 install -r requirements.txt```
