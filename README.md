@@ -1,6 +1,5 @@
 
 # Objective
-==============
 
 Billions of people have started using different social networking platform for their purpose.
 Social networking platform has given us opportunity to connect with people with same interest and collaborate with them easily. 
@@ -11,7 +10,6 @@ Spread of such information could be controlled if we can detect it properly.
 Machine learning can help us detect such hateful and offensive language.
 
 # Dataset 
-==============
 
 Dataset for the project was downloaded from kaggle : [Hate Speech and Offensive Language dataset](https://www.kaggle.com/mrmorj/hate-speech-and-offensive-language-dataset)
 ```
@@ -25,7 +23,7 @@ Which is actually good for our project as data resembles with real world scenari
 ```
 
 # Folder Structure 
-===================
+
 Following folder structure is inspired from [Cookiecutter-data-science](https://drivendata.github.io/cookiecutter-data-science/#directory-structure)
 I have just slightly modified the structure for my purpose. 
 
