@@ -135,7 +135,7 @@ optional arguments:
 
 # Website
 
-You can find the webiste running live at [linkedin](https://hateandoffensivelangdetector.herokuapp.com/)
+You can find the webiste running live at [HerokuApp](https://hateandoffensivelangdetector.herokuapp.com/)
 ![Deployed model](https://github.com/kartikbatra056/HateSpeechAndOffensiveLanguageDetection/blob/master/model.JPG)
 
 # Contact
