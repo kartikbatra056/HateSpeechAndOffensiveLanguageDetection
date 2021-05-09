@@ -109,6 +109,13 @@ optional arguments:
  
  # all logs generated will be stored into logs directory
 ```
+## Evaluate model
+You need to evaluate model before passing it to deployment. For which I have written a simple evaluation test using ```unittest``` module in python which tests model's F1_score on test set is higher than a certain limit for following model which is 0.75 which means if model has ```F1_score (macro) > 0.75``` then model has passed the test and ready for deployment. In real world scenario we have to re-train model due to change in data with time this test helps verfiy that our model is better than the previous model. Though I have only consider only criterion (F1_score) you can also look for another criterion like accuracy,F1_score(weighted).      
+
+```
+# To evaluate model you just need to run following command 
+python3 -m unittest evaluate/evaluation.py
+```
 
 ## Deploy model
 
